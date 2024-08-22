@@ -332,7 +332,7 @@ mjx-container {
 .matts {
   cursor: default;
   display: inline-flex;
-  background: url("/images/matts.svg") center center/contain no-repeat;
+  background: url("/Dustbin/images/matts.svg") center center/contain no-repeat;
   align-items: center;
   padding: 8px;
   transition: opacity 200ms ease-out;
