@@ -173,7 +173,8 @@
 }
 .radio-skin,
 .radio-skin--website,
-.radio-skin--study {
+.radio-skin--study,
+.radio-skin--event {
   height: 100%;
   width: 2px;
   border-radius: 1px;
@@ -182,7 +183,8 @@
 }
 .radio-skin::after,
 .radio-skin--website::after,
-.radio-skin--study::after {
+.radio-skin--study::after,
+.radio-skin--event::after {
   transition: all 0.4s ease;
   display: block;
   height: 20px;
@@ -237,6 +239,29 @@
 .timeline-item-study .line-date-tag,
 .timeline-item-study--hidden .line-date-tag {
   background-color: #11460e;
+}
+/*
+  .timeline-item-app, .timeline-item-event {
+    font-weight: bold;
+  }
+  */
+.radio-skin--event::after {
+  border-color: #ca5e00;
+}
+#radio-event:checked+.radio-skin--event {
+  background-color: #ca5e00;
+}
+#radio-event:checked+.radio-skin--event::after {
+  background-color: #ca5e00;
+  top: -2px;
+}
+.timeline-item-event .line-anchor::after,
+.timeline-item-event--hidden .line-anchor::after {
+  background-color: #ca5e00;
+}
+.timeline-item-event .line-date-tag,
+.timeline-item-event--hidden .line-date-tag {
+  background-color: #ca5e00;
 }
 /*
   .timeline-item-app, .timeline-item-event {
